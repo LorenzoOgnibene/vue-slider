@@ -47,7 +47,10 @@ createApp({
             if( this.activeIndex >= this.slides.length){
                 this.activeIndex = 0;
             }
-        }  
+        },
+        currentThumbnails(index){
+            this.activeIndex = index;
+        } 
     }
 }).mount('#app');
 

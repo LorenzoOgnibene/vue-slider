@@ -28,7 +28,7 @@
                     <div class="prev" @click="previousImg()"></div>
                     <div class="next" @clicK="nextImg()"></div>
                     
-                    <div class="thumb" v-for="(image, indexOf) in slides" :class="(indexOf === activeIndex) ? 'active' : ''">
+                    <div class="thumb" v-for="(image, indexOf) in slides" :class="(indexOf === activeIndex) ? 'active' : ''" @click="currentThumbnails(indexOf)">
                         <img  :src="image.image" :alt="image.title" >
                     </div>
                 </div>
