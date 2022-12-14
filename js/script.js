@@ -55,7 +55,7 @@ createApp({
         },
         
         autoPlay(){
-            this.interval = setInterval(this.nextImg, 1000);
+            this.interval = setInterval(this.nextImg, 3000);
         },
 
         clearInterval(){
